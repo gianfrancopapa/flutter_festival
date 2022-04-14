@@ -11,6 +11,10 @@ We also make use of the BLoC pattern and some best practices.
 [somnio_software_link]: https://somniosoftware.com/
 
 
+#### Pre requisities
+- Flutter installed
+- Firebase account
+
 #### Create the project
 
 ```
@@ -67,15 +71,13 @@ mason get
 mason ls
 ```
 
-#### Add feature_route_bloc brick
+#### Add login_bloc brick
 
 ```
-mason add -g feature_route_bloc \
+mason add -g login_bloc \
 --git-url https://github.com/gianfrancopapa/bricks \
---git-path bricks/feature_route_bloc
+--git-path bricks/login_bloc
 ```
-
-Let's create our Login feature!
 
 ### 2- Authentication Repository
 
