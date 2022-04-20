@@ -20,7 +20,7 @@ We also make use of the BLoC pattern and some best practices.
 ```
 # Include fvm (optional)
 # We will be using only web
-fvm flutter create --project-name webapp --org com.somnio --platforms web
+flutter create --project-name webapp --org com.somnio --platforms web .
 ```
 
 #### VS Code configuration
@@ -53,7 +53,6 @@ Let's start with creating the required UI. It should look like this:
 flutter_bloc
 equatable
 firebase_core
-firebase_auth
 ```
 
 #### Mason
