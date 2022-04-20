@@ -81,17 +81,11 @@ mason add -g login_bloc \
 
 ### 2- Authentication Repository
 
-#### Add flutter_package brick
+#### Add authentication_repository brick
 ```
-mason add -g flutter_package \
+mason add -g authentication_repository \
 --git-url https://github.com/gianfrancopapa/bricks \
---git-path bricks/flutter_package
-```
-
-#### Add dependencies
-```
-firebase_auth
-firebase_auth_web
+--git-path bricks/authentication_repository
 ```
 
 #### Firebase Cli
