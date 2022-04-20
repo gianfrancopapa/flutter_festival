@@ -1,0 +1,28 @@
+name: webapp
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  authentication_repository:
+    path: packages/authentication_repository
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.0.1
+  equatable: ^2.0.3
+  firebase_core: ^1.14.0
+  firebase_auth: ^3.3.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
