@@ -103,3 +103,24 @@ dart pub global activate flutterfire_cli
 # config
 flutterfire config
 ```
+
+#### Initialize Firebase in main
+
+```
+void main() async {
+  bootstrap(
+    () async {
+      return FlutterFestivalApp();
+    },
+  );
+}
+
+void bootstrap(Future<Widget> Function() builder) async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  runApp(await builder());
+}
+```

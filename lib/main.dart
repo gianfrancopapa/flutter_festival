@@ -7,7 +7,7 @@ import 'package:webapp/login/login.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
-  bootstap(
+  bootstrap(
     () async {
       //Initialize dependencies
       final authenticationRepository = AuthenticationRepository(
@@ -21,7 +21,7 @@ void main() async {
   );
 }
 
-void bootstap(Future<Widget> Function() builder) async {
+void bootstrap(Future<Widget> Function() builder) async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
